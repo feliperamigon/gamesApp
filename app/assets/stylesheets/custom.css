@@ -1,0 +1,26 @@
+body{
+
+	background-color: #ecf0f1;
+
+}
+#form{
+	text-align: center;
+	color:black;
+	padding: 50px;
+}
+h2{
+	text-align: center;
+	color:black;
+}
+#games {
+	margin-top: -11px;
+	background-color: #f1c40f;
+	color:white;
+}
+#titles {
+	background-color: #ecf0f1;
+}
+h1 , h2 {
+
+	margin-top: 20px;
+}

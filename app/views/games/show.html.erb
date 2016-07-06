@@ -1,0 +1,27 @@
+
+<div class="containter-fluid">
+	<div class="row">
+		<h1> Welcome to <%= @game.title%></h1>
+		<div class="col-md-6" style="margin: 10px 10px;">
+			<p>Name : <%= @game.title%></p>
+			<p>Genre: <%= @game.genre%></>
+			<button class="btn btn-md btn-sucess" style="float:right">Play <%= @game.title%></button>
+		</div>
+		<div class=" col-md-6">
+			<img src="" alt="">
+		</div>
+	</div>
+	<div class="panel panel-default col-md-12">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading"><strong>Ranking Table</strong></div>
+		  <!-- Table -->
+		  <table class="table">
+		    <th>Email</th>
+		    <th>Max Score</th>
+		    <% @rankings.each do |ranking|%>
+		    <td><%=ranking.user.email%></td>
+		    <td><%=ranking.score%></td>
+			<%end%>
+		  </table>
+    </div>
+</div>
