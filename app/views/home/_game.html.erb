@@ -1,9 +1,9 @@
 <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <img src="..." alt="...">
+			      <%=image_tag "gamelogo1.png", class: "logo1"%>
 			      <div class="caption">
-			        <h3><%=game.title%></h3>
-			        <h4><%=game.genre%></h4>
+			        <h2><%=game.title%></h2>
+			        <h3 align="center"><%=game.genre%></h3>
 			        <p>Description coming soon ..</p>
 			        <p><%= link_to "Play",game_path(game.id)%></p>
 			      </div>

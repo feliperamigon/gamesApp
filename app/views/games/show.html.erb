@@ -1,17 +1,31 @@
 
-<div class="containter-fluid">
-	<div class="row">
+	<div class="col-md-12" align="center">
+		<%=image_tag "gamelogo.png", class: "logo"%>
+	</div>
+</div>
+
+
+
+	<div class="col-md-12" class="row">
 		<h1> Welcome to <%= @game.title%></h1>
-		<div class="col-md-6" style="margin: 10px 10px;">
+		<div class="col-md-12">
 			<p>Name : <%= @game.title%></p>
-			<p>Genre: <%= @game.genre%></>
-			<button class="btn btn-md btn-sucess" style="float:right"><%= link_to "Play Game",play_game_path(@game.id)%></button>
+			<p>Genre: <%= @game.genre%></p>
+<div class="col-md-12" align="center">
+				<button class="btn btn-md btn-sucess" id="btnplay" ><%= link_to "Play Game",play_game_path(@game.id)%></button>
 		</div>
-		<div class=" col-md-6">
+		</div>
+<br>
+<br>
+<br>
+
+		<div class=" col-md-12">
 			<img src="" alt="">
 		</div>
 	</div>
-	<div class="panel panel-default col-md-12">
+<br>
+<br>
+	<div class="panel panel-default col-md-offset-3 col-md-6" >
 		  <!-- Default panel contents -->
 		  <div class="panel-heading"><strong>Ranking Table</strong></div>
 		  <!-- Table -->

@@ -1,0 +1,96 @@
+@font-face {
+   font-family: 'Geo';
+   src: font-url('Geo_Oblique.otf') format('otf'),
+   
+
+}
+body{
+	background:#64E1C9;
+	background-image: url("fondo.png");
+	color:#64E1C9;
+	font-family: 'Geo', Arial, sans-serif;
+	text-transform:uppercase;
+}
+
+h1,h2,h3 {
+    font-weight: bold;
+    line-height: 1;
+}
+h1 {
+    font-size: 70px;
+    letter-spacing: -1px;
+    margin: 0 0 40px;
+    text-align: center;
+
+}
+h5 {
+    font-size: 40px;
+    letter-spacing: -1px;
+    margin: 0 0 40px;
+    text-align: center;
+    color: #fdfdfd ;
+
+}
+h6 {
+    font-size: 100px;
+    letter-spacing: -1px;
+    margin: 0 0 40px;
+    text-align: center;
+    color: #fdfdfd ;
+
+}
+p {
+    font-size: 40px;
+    letter-spacing: -1px;
+    text-align: center;
+
+}
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo1 {
+    height: 200px;
+}
+#btnplay {
+    background: #3CBC8D;
+    color:#FFFFFF;
+    padding: 30px;
+    font-size: 50px;
+
+}
+#text{
+    font-size: 300px;
+    letter-spacing: -1px;
+    margin: 0 0 40px;
+    background-image: url("http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=74702776 ");
+    text-align: center;
+    color:#33BAEF;
+  
+
+}
+#answer{
+  padding: 20px;
+  font-size: 1.5em;
+
+}
+#games{
+    background-color: #c95b5b;
+
+}
+.panel-heading{
+    font-size: 40px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.table{
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-align: center;
+}

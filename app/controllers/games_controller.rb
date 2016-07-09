@@ -7,7 +7,6 @@ class GamesController < ApplicationController
 		@game = Game.find(params[:id])
 	end
 	def save_score
-
 		@game=Game.find(params[:id])
 		@player=@game.rankings.find_by user_id: current_user.id
 		if @player
