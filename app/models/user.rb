@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
   has_many :games , :through => :rankings
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable
 end

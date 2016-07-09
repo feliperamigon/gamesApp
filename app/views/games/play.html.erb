@@ -1,0 +1,31 @@
+
+ <div class="container-fluid">
+ 	
+	<div id="panel" class="row">
+	 	<div id="title" class="col-sm-6" style="text-align:center">
+	 		<h2>Playing :</h2>
+	 		<h3><%= @game.title%></h3>
+	 	</div>
+	 	<div id="instructions" class="col-sm-6">
+	 		<h2>Instructions</h2>
+	 		<h3><%= @game.instructions%></h3>
+	 	</div>
+ 	</div>
+ 	<div id="game" class="row jumbotron">
+ 	  <div>
+		<br><br><br><br><br><br>
+		<h2>Time left : <span id="time"></span></h2> 
+	  </div>
+	  <div class="col-sm-12" style="text-align:center">
+			<h3><p id="text"></p></h3>
+	  
+	 
+			<h3>Type the full sequence : </h3><input type="text" id="answer" name="text">
+	 
+	  
+			<h4>Score: <h3 id="score"></h3></h4>
+			<!-- <button id="save" class="btn btn-lg btn-success">Save Score</button> -->
+	  </div>
+ 	</div>
+	
+</div>

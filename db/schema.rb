@@ -19,9 +19,10 @@ ActiveRecord::Schema.define(version: 20160702200332) do
   create_table "games", force: :cascade do |t|
     t.string   "title"
     t.string   "genre"
+    t.string   "instructions"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   add_index "games", ["user_id"], name: "index_games_on_user_id", using: :btree
@@ -29,10 +30,10 @@ ActiveRecord::Schema.define(version: 20160702200332) do
   create_table "rankings", force: :cascade do |t|
     t.integer  "game_id"
     t.integer  "user_id"
-    t.integer  "score"
+    t.integer  "score",      default: 0
     t.integer  "last_score"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   add_index "rankings", ["game_id"], name: "index_rankings_on_game_id", using: :btree

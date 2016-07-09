@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Game.create(title:"Memokey",genre:"Arcade")
+Game.create(title:"Similars",genre:"Arcade")
+Game.create(title:"MecaPro",genre:"Arcade")
+Game.create(title:"Multiplication",genre:"Arcade")

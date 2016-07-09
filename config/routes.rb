@@ -6,12 +6,17 @@ Rails.application.routes.draw do
 
 
    devise_for :users, controllers: {
-        sessions: 'users/sessions'
+        sessions: 'users/sessions',registrations: 'users/registrations'
       }
 
   get 'home/index'
 
-  resources :games
+  resources :games do 
+    member do
+      get 'play'
+      post 'save_score'
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

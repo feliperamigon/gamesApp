@@ -5,7 +5,7 @@
 		<div class="col-md-6" style="margin: 10px 10px;">
 			<p>Name : <%= @game.title%></p>
 			<p>Genre: <%= @game.genre%></>
-			<button class="btn btn-md btn-sucess" style="float:right">Play <%= @game.title%></button>
+			<button class="btn btn-md btn-sucess" style="float:right"><%= link_to "Play Game",play_game_path(@game.id)%></button>
 		</div>
 		<div class=" col-md-6">
 			<img src="" alt="">
@@ -19,9 +19,12 @@
 		    <th>Email</th>
 		    <th>Max Score</th>
 		    <% @rankings.each do |ranking|%>
-		    <td><%=ranking.user.email%></td>
-		    <td><%=ranking.score%></td>
+		    <tr>
+			    <td><%= ranking.user.email%></td>
+			    <td><%= ranking.score%></td>
+		    </tr>
 			<%end%>
+
 		  </table>
     </div>
 </div>
